@@ -1,0 +1,169 @@
+  <!-- old code, worked -->
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Noah Arroyo's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+</script>
+</head>
+
+<body>
+
+
+  <h1>Journalism</h1>
+  <div class="introtext">
+  <p>I’ve focused primarily on policy analysis and accountability journalism.</p>
+  <p>I dig deep into topics in order to write news that is fair.</p>
+  <br>
+  <br>
+  <br>
+  </div class="introtext">
+  <div class="img-txt">
+    <div class="photo">
+      <img src="pikachu.jpg" alt="">
+    </div>
+    <div class="content">
+      <h2>Veritas</h2>
+      <p>Tenants alleged that Veritas Investments Inc., perhaps the largest rent-control landlord in San Francisco, neglected their needs while fostering inhospitable living environments through perennial, on-site construction projects — with the goal of pushing tenants out and charging newcomers higher rents. The company vigorously denied the claims.</p>
+      <p><span class="hideme">In my story, I created a custom database from various public records, proving that building-code violations increased after the company bought the properties. This appeared to lend credence to the tenants’ narrative.</span></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="img-txt">
+    <div class="photo">
+      <img src="pikachu.jpg">
+    </div>
+    <div class="content">
+      <h2>Veritas (methodology)</h2>
+      <p>My analysis of Veritas properties drew public data from multiple sources, synthesizing them into a single data set that allowed me to spot trends.</p>
+      <p><span class="hideme">I ran my analytical approach by both the real estate company and one of the city’s chief building inspectors [DBL CHECK], neither of whom criticized it.</span></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="img-txt">
+    <div class="photo">
+      <img src="pikachu.jpg">
+    </div>
+    <div class="content">
+      <h2>Remaking Rent Control</h2>
+      <p>In late 2018, California voters prepared to weigh in on a controversial ballot measure that could strengthen local rent-control policies.</p>
+      <p><span class="hideme">I dissected a form of rent control that would become legal if the state measure passed, and that had potential to appease warring political camps dramatically growing the stock of price-controlled housing.</span></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="img-txt">
+    <div class="photo">
+      <img src="pikachu.jpg">
+    </div>
+    <div class="content">
+      <h2>Navigation Centers</h2>
+      <p>City officials were touting a new type of homelenessness shelter, called a “Navigation Center,” as a major tool for helping people get off the streets.</p> 
+      <p><span class="hideme">But my data analysis proved that the centers’ clients were increasingly returning to the streets, and the largest subset of clients received bus rides out of town.</span></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="img-txt">
+    <div class="photo">
+      <img src="pikachu.jpg">
+    </div>
+    <div class="content">
+    <h2>Soft-story retrofits</h2>
+    <p>Years prior, city officials had commissioned a study to estimate how many, and which, apartment buildings were vulnerable to collapse in an earthquake. But they never publicized the findings.<p>
+    <p><span class="hideme">When I did, the resulting web traffic overloaded our site for days. Within months, the city had created a program to compel those building owners to retrofit.</span></p>
+    </div>
+  </div>    
+  <h1>Management and Vision</h1>
+  <p>Solutions packages (homelessness, housing crises): Convened interns and freelance journalists, and managed story ideation and selection for multiple projects, all of which focused on potential solutions to the region’s persistent housing and homelessness crises.</p>
+  <p>This coverage followed the archetype [DICTION?] of solutions-focused journalism, which spills most of its ink on analyzing the pros and cons of a possible fix to a well-known social problem.</p>
+  <br>
+  <p>Voter guides: Led the team that designed and wrote digital voter guides, covering all ballot measures and key races.</p>
+  <br>
+  <p>Managing interns: Frequently managed interns, assigning their work, fielding questions and editing drafts.</p>
+  <br>
+  <h1>Workflow and Processes</h1>
+  <p>I spotted gaps in our company’s workflow, and I figured out how to fill them. This required locating the appropriate tools, customizing them to fit our needs and getting buy-in from the team to adopt them.</p>
+  <br>
+  <p>Problem: Disorderly, far-flung files — wasted time spent looking for things!</p>
+  <p>Solution: Box.com</p>
+  <p>I pulled together files and folders from multiple locations — various personal computers and cloud-storage accounts, organizing them into a single, coherent file structure. I found a cloud-storage product that suited our needs and budget, and trained the team how to use it.</p>
+  <br>
+  <p>Problem: We frequently got deep into our multi-month reporting projects without accomplishing milestone goals, such as hitting draft deadlines or shooting enough photos.</p>
+  <p>Solution: Airtable</p>
+  <p>I customized pages (technically, “bases”) in Airtable that were sorted, filtered, and possessed specialized fields and views for individual team members. This allowed each person to engage with a subset of the tool, but their inputs combined into  We then traded off the responsibility of managing this database of to-dos.</p>
+  <br>
+  <p>Problem: Communication was strewn across email and SMS tools, and these conversations often left out necessary people. This led to confusion, frustration, delays.</p>
+  <p>Solution: Slack</p>
+  <p>I carefully tailored communication channels, focusing each on a topic that needed its own breathing room. I trained each team member how to use the tool to minimize crosstalk.</p>
+
+
+</body>
+
+
+
+
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},5000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+
+
+
+
+
+
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

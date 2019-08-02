@@ -1,3 +1,180 @@
-p {
-	font-style: italic;
+h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 80px;
 }
+
+p {
+  font-size: 18px;
+  display: block;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+  .header li, a, .button, h3, .image{
+    transition: all 0.10s ease-in-out;
+    -webkit-transition: all 0.10s ease-in-out;
+    -moz-transition: all 0.10s ease-in-out;
+    -o-transition: all 0.10s ease-in-out;
+  }
+
+  .header {
+    width: 100%;
+    top:0px;
+    background:#fff;
+    position: fixed;
+    height: 80px;
+    z-index: 9999;
+    text-align: center;
+    border-bottom: 1px solid #f5f1ef;
+    display: inline-block;
+  }
+
+  .header ul {
+    margin: auto;
+    display: inline-block;
+    padding: 0px;
+  }
+
+  .header li {
+    float: left;
+    padding: 10px 20px 10px 0px;
+    cursor: pointer;
+    list-style-type: none;
+    height:40px;
+  }
+
+  .header li h3 {
+    border-left: 1px solid #cecece;
+    padding-left: 20px;
+  }
+
+  .header li:first-child h3{
+    border-left:0px;
+  }
+
+  .header li.active a {
+    color: rgba(0,0,0,.8);
+  }
+
+  .header li a {
+    color:#B2AB9E;
+  }
+
+
+
+
+.introtext {
+  font-style: italic;
+  font-size: 22px;
+  margin: auto;
+  width: 40%;
+}
+
+
+
+/*.container {
+  width: 100%;
+  display: table;
+
+.photo,
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.photo {
+  width: 45%;
+}
+.photo img {
+  min-width: 450px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  float: right;
+}
+.content {
+  width: 55%;
+  padding: 15px;
+  vertical-align: top;
+}*/
+
+
+
+
+.container {
+    width: 95%;
+    padding: 20px;
+    overflow: hidden;
+    align-content: center;
+}
+
+.container img {
+    margin-right: 15px;
+    float: left;
+    max-width: 500px
+}
+
+.content h2,
+.content p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+}
+
+
+.container2 {
+    max-width: 500px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    font-style: italic;
+    /*align-content: center;*/
+    /*margin: 2px 0 0 0;*/
+}
+
+.content2 p{
+    text-align: left;
+    margin-left: 15px;
+    display: block;
+    /*margin: 2px 0 0 0;*/
+}
+
+
+
+
+
+
+.hideme {
+  color: #003673;
+  font-weight: bold;
+  opacity:0;
+}
+
+
+
+
+
+a {
+    color:rgba(0,0,0,.8);
+    text-decoration: none;
+  }
+
+a:hover {
+  color: #300099;
+  text-decoration: underline;
+}
+
+
+
+
+
+/*20 best fonts: https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html*/
+/*scroll effect: https://www.sitepoint.com/introduction-jquery-scroll-based-animations/*/
+/*scroll effect, code: https://codepen.io/SitePoint/pen/ytwKo?editors=1010*/
+/*scroll effect, better: https://stackoverflow.com/questions/9097501/show-div-when-scroll-position*/
